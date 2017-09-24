@@ -11,6 +11,8 @@ import UIKit
 
 class NewsCell : UITableViewCell {
     
+    static let kCellIdentifier = "news-cell"
+    
     @IBOutlet weak var thumbnailView: UIImageView!
     @IBOutlet weak var articleTitle: UILabel!
     

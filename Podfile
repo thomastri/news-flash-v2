@@ -4,6 +4,9 @@
 target 'NewsFlash' do
   use_frameworks!
   pod 'SnapKit', '~> 4.0'
-  # Pods for NewsFlash
+  pod 'Alamofire', '~> 4.5'
+  pod 'ObjectMapper', '~> 2.2'
+  pod 'Kingfisher', '~> 4.0'
+  pod 'SwiftWebVC'
 
 end
