@@ -27,6 +27,11 @@ class HomeViewController : UIViewController {
     }
     
     func setupTableView() {
+        
+        // optimizes table to use our cell class
+        // forCellReuseIdentifier allows us to reuse cells as we scroll to preserve memory
+        homeView.tableView.register(UINib(nibName: "NewsCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        
         homeView.tableView.delegate = self
         homeView.tableView.dataSource = self
     }
@@ -40,10 +45,11 @@ extension HomeViewController : UITableViewDataSource {
         return 10
     }
     
+    // controls the cell view
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! NewsCell
         
-        cell.textLabel?.text = "Cell \(indexPath.row)"
+        cell.articleTitle.text = "Article \(indexPath.row)"
         
         return cell
     }

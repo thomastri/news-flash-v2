@@ -13,6 +13,7 @@
 		0B692AF41F7766350042F28B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B692AF31F7766350042F28B /* HomeView.swift */; };
 		0B692AF71F77670D0042F28B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B692AF61F77670D0042F28B /* HomeViewController.swift */; };
 		0B692AFB1F776DE20042F28B /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B692AFA1F776DE20042F28B /* NewsCell.xib */; };
+		0B692AFD1F7770740042F28B /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B692AFC1F7770740042F28B /* NewsCell.swift */; };
 		36CAF54CF7A05A13D172576E /* Pods_NewsFlash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692873825EDBE92B6AA03890 /* Pods_NewsFlash.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0B692AF31F7766350042F28B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0B692AF61F77670D0042F28B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0B692AFA1F776DE20042F28B /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		0B692AFC1F7770740042F28B /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		495A50E681FF0DAEABD8CBC6 /* Pods-NewsFlash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFlash.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsFlash/Pods-NewsFlash.release.xcconfig"; sourceTree = "<group>"; };
 		692873825EDBE92B6AA03890 /* Pods_NewsFlash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsFlash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4973505F4D26E920840FADB /* Pods-NewsFlash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFlash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsFlash/Pods-NewsFlash.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				0B692AFA1F776DE20042F28B /* NewsCell.xib */,
+				0B692AFC1F7770740042F28B /* NewsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				0B692ADA1F77647E0042F28B /* AppDelegate.swift in Sources */,
 				0B692AF41F7766350042F28B /* HomeView.swift in Sources */,
+				0B692AFD1F7770740042F28B /* NewsCell.swift in Sources */,
 				0B692AF71F77670D0042F28B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
