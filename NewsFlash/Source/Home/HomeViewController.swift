@@ -11,6 +11,7 @@ import UIKit
 import Alamofire
 import ObjectMapper
 import Kingfisher
+import SwiftWebVC
 
 typealias JSONDict = [String : Any]
 
@@ -93,9 +94,14 @@ extension HomeViewController : UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let article = articles[indexPath.row]
-        if let url = URL(string: article.url) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
+        
+        // Opens in default broswer
+//        if let url = URL(string: article.url) {
+//            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//        }
+        
+        let webVC = SwiftWebVC(urlString: article.url)
+        self.navigationController?.pushViewController(webVC, animated: true)
     }
     
     // each row size
